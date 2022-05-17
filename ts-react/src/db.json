@@ -1,0 +1,73 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "learn redux",
+      "status": false
+    },
+    {
+      "id": 2,
+      "title": "learn typeScript",
+      "status": false
+    },
+    {
+      "id": 0.9704068038497029,
+      "title": "Learn ES6 javascript",
+      "status": false
+    },
+    {
+      "id": 0.5960835074822683,
+      "title": "Learn MANGODB",
+      "status": false
+    },
+    {
+      "id": 0.6673015400269295,
+      "title": "LEARN PERFLEAF",
+      "status": false
+    },
+    {
+      "id": 0.2872833623379436,
+      "title": "LEARN PERFLEAF",
+      "status": false
+    },
+    {
+      "id": "5562c461-509e-4e29-89b5-cafd706a520f",
+      "title": "LEARN HOOKS",
+      "status": false
+    },
+    {
+      "id": "f7d502ee-ae37-437c-9540-d2376ab5c15f",
+      "title": "Learn react-router-dom@6",
+      "status": false
+    }
+  ],
+  "Laptop": [
+    {
+      "model": "leonva 7 pro",
+      "makeYear": "2017",
+      "operatingSystem": "windows operating system",
+      "screenHeight": "9.50",
+      "screenWidth": "14.80",
+      "price": "18000",
+      "id": "372db804-3871-42c0-895e-6dff4bceca68"
+    },
+    {
+      "model": "Mac book pro ",
+      "id": "baa62a10-2722-43ba-8605-8c43f77126d4",
+      "makeYear": "2020",
+      "operatingSystem": "water operating system",
+      "screenHeight": "14",
+      "screenWidth": "18",
+      "price": "200500"
+    },
+    {
+      "model": "dell",
+      "id": "06e5e16b-d3c3-43e8-ade7-3f0785fd2b24",
+      "makeYear": "2019",
+      "operatingSystem": "windows operating system",
+      "screenHeight": "9",
+      "screenWidth": "14",
+      "price": "47000"
+    }
+  ]
+}

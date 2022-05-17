@@ -1,0 +1,29 @@
+.table{
+    border-collapse: collapse;
+    
+}
+th,td{
+    border:solid rgb(117, 117, 117) 1px;
+    padding: 10px 10px;
+    font-size: 18px;
+}
+
+.box{
+    width: 250px;
+    font-size: 18px;
+    padding: 5px 10px;
+    border: none;
+    border: solid 1px gray;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+#submit{
+    background-color: rgb(153, 149, 149);
+    color: white;
+    width: 200px;
+    height: 35px;
+    font-size: 18px;
+    border:0px soild gray;
+    font-weight: 700;
+}
