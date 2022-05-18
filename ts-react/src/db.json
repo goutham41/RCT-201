@@ -58,7 +58,7 @@
       "operatingSystem": "water operating system",
       "screenHeight": "14",
       "screenWidth": "18",
-      "price": "200500"
+      "price": "2000"
     },
     {
       "model": "dell",
@@ -68,6 +68,15 @@
       "screenHeight": "9",
       "screenWidth": "14",
       "price": "47000"
+    },
+    {
+      "model": "Mac book pro ",
+      "id": "978fd111-9fef-4d43-84f0-e4ea0afd3b2b",
+      "makeYear": "2022",
+      "operatingSystem": "windows operating system",
+      "screenHeight": "15",
+      "screenWidth": "18",
+      "price": "20000"
     }
   ]
 }

@@ -27,3 +27,12 @@ th,td{
     border:0px soild gray;
     font-weight: 700;
 }
+.github{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    width:90%;
+    margin:auto;
+    justify-content: center;
+    gap:15px
+}

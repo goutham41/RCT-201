@@ -30,7 +30,7 @@ export const ProductForm = () => {
     axios
       .post("http://localhost:8000/laptop", formData)
       .then(getData)
-      .catch((e) => console.log(e));
+      .catch((error) => console.log(error));
   };
   useEffect(() => {
     getData();
@@ -38,12 +38,25 @@ export const ProductForm = () => {
 
   const getData = () => {
     axios("http://localhost:8000/laptop")
-      .then((r) => {
-        console.log(r.data);
-        setdata(r.data);
+      .then((data) => {
+        setdata(data.data);
       })
-      .catch((e) => console.log(e));
+      .catch((error) => console.log(error));
   };
+    function handleSort(data: laptopForm[], by: keyof laptopForm) {
+      let N = data.length;
+      for (let i = 0; i < N - 1; i++) {
+        for (let j = 0; j < N - i - 1; j++) {
+          if (+(data[j][by]) > +(data[j + 1][by])) {
+            let temp = data[j];
+            data[j] = data[j + 1];
+            data[j + 1] = temp;
+          }
+        }
+      }
+      setdata([...data]);
+    }
+    
   return (
     <>
       <div>
@@ -109,6 +122,29 @@ export const ProductForm = () => {
         </form>
       </div>
       <h2>List of the Product</h2>
+
+      <div
+        style={{
+          display: "flex",
+          height: "35px",
+          justifyContent: "center",
+          marginBottom: "15px",
+        }}
+      >
+        <p style={{ marginTop: "5px", marginRight: "10px" }}>Sort methods</p>
+        <button onClick={() => handleSort(data, "makeYear")}>
+          Sort low-to-high Year
+        </button>
+
+        <button onClick={() => handleSort(data, "price")}>
+          Sort low-to-high Price
+        </button>
+
+        <button onClick={() => handleSort(data, "screenWidth")}>
+          Sort low-to-high Width
+        </button>
+      </div>
+     
       <div style={{ width: "fit-content", margin: "auto" }}>
         <table className={styles.table}>
           <thead className={styles.head}>
