@@ -1,0 +1,39 @@
+
+.inp{
+    padding: 1rem;
+    width: 400px;
+    margin-top: 50px;
+    border:none;
+    font-size: 16px;
+    border:1px solid rgb(90, 88, 88) ;
+}
+
+.inp:focus{
+    outline: none;
+}
+
+.hidedropdown{
+    border: 1px solid rgb(83, 76, 76);
+    height: auto;
+    width: 500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1,100%);
+    grid-template-rows: repeat(auto,1rem);
+    margin-top: 0px;
+    z-index: 1;
+}
+
+.hidedropdown>p{
+    text-align: left;
+    padding: 0.9rem;
+    margin: 0;
+}
+
+.hidedropdown>p:hover{
+    background-color:rgb(240, 212, 212);
+}
+
+.drop{
+    display: none;
+}

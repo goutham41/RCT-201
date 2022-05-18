@@ -8,8 +8,10 @@ import {useTimeout} from "./components/Hooks/useTimeout"
 import Githubmin from "./components/ClassTime/Githubmin";
 import { TimerStopwatch } from "./components/hooksComponents/TimerStopwatch";
 import Stopwatch from "./components/hooksComponents/Stopwatch";
+import CountrySearch from "./components/hooksComponents/CountrySearch"
+import MergeState from "./components/hooksComponents/MargeState";
 function App() {
-  const isReady = useTimeout(1000);
+  const isReady = useTimeout(500);
   return (
     <div className="App">
       {/* <Counter init={0} /> */}
@@ -19,7 +21,14 @@ function App() {
       {/* <Githubmin/> */}
       {/* <TimerStopwatch/> */}
       {/* <ProductForm /> */}
-      {isReady && <Stopwatch/>}
+      {/* <Stopwatch/> */}
+
+      {isReady && (
+        <>
+          <CountrySearch />
+          {/* <MergeState/> */}
+        </>
+      )}
       {!isReady && <h3 style={{ marginTop: "50px" }}>Data Loading .......</h3>}
     </div>
   );

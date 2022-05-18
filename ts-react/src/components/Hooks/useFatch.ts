@@ -1,11 +1,13 @@
 import React,{useState,useEffect} from "react";
 import axios, { AxiosResponse } from "axios";
 
+
+
 export function useFetch<T>(url:string,params: Record<string,unknown>) {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState<T[]>([]);
   const [error, setError] = useState(false);
-
+ 
   useEffect(() => {
    axios.get(url, {
           params: {
@@ -13,7 +15,7 @@ export function useFetch<T>(url:string,params: Record<string,unknown>) {
           },
         })
         .then(({ data }) => {
-          setData(data.items);
+          setData(data);
            setLoading(false);
         }).catch(() => {
          setError(true);
