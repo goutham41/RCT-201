@@ -6,7 +6,8 @@ import Todos from "./components/ClassTime/Todos";
 import { ProductForm } from "./components/ProductManagement/ProductForm";
 import {useTimeout} from "./components/Hooks/useTimeout"
 import Githubmin from "./components/ClassTime/Githubmin";
-import { TimerStopwatch } from "./components/hookstsx/TimerStopwatch";
+import { TimerStopwatch } from "./components/hooksComponents/TimerStopwatch";
+import Stopwatch from "./components/hooksComponents/Stopwatch";
 function App() {
   const isReady = useTimeout(1000);
   return (
@@ -17,7 +18,8 @@ function App() {
       {/* <ProductForm /> */}
       {/* <Githubmin/> */}
       {/* <TimerStopwatch/> */}
-      {isReady && <ProductForm />}
+      {/* <ProductForm /> */}
+      {isReady && <Stopwatch/>}
       {!isReady && <h3 style={{ marginTop: "50px" }}>Data Loading .......</h3>}
     </div>
   );
