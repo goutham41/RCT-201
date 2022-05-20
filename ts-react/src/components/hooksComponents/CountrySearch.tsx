@@ -17,9 +17,9 @@ const CountrySearch = () => {
   const [dropDown, setDropDown] = useState(false);
 
   const { data, error, loading } = useFetch<All>(url, {
-    _page: 1,
+    page: 1,
     q: text  || "india",
-    _limit: 5,
+    _limit: 10,
   });
  
 

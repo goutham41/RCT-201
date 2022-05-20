@@ -6,7 +6,7 @@ import axios,{AxiosResponse} from 'axios';
      title: string;
      status: boolean;
    };
-const Todos = () => {
+const TodosMemo = () => {
     const [text,setText] = React.useState("")
     const [todos, setTodos] = React.useState<TodoType[]>([]);
    
@@ -44,4 +44,4 @@ const Todos = () => {
   );
 }
 
-export default Todos
+export default TodosMemo;
