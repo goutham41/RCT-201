@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Optmain from "./components/InputOtp/Optmain";
 // import Counter from "./components/ClassTime/Counter";
 // import Todos from "./components/ClassTime/Todos";
 // import { ProductForm } from "./components/ProductManagement/ProductForm";
@@ -12,6 +13,8 @@ import VerifyPost from "./components/MEMOISATION-REACT/VerifyPost";
 // import MergeState from "./components/hooksComponents/MargeState";
 // import Fibonacci from "./components/ClassTime/Fibonacci";
    import {Todo} from "./components/UseCallBack/TodosCall";
+import TabsChild from "./components/Tabs/TabsChild";
+import TabsMain from "./components/Tabs/TabsMain";
 function App() {
   const isReady = useTimeout(500);
   return (
@@ -31,7 +34,9 @@ function App() {
           {/* <MergeState/> */}
           {/* <Fibonacci /> */}
           {/* <Todo /> */}
-          <VerifyPost/>
+          {/* <VerifyPost/> */}
+          <Optmain/>
+          <TabsMain/>
         </>
       )}
       {!isReady && <h3 style={{ marginTop: "50px" }}>Data Loading .......</h3>}
